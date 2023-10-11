@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+      .main {
+        width: 800px;
+        margin: 0 auto;
+        background-color: burlywood;
+      }
+
+      .form {
+        display: flex;
+        /* align-items: center; */
+        /* align-content: center; */
+        justify-content: center;
+        align-items: baseline;
+      }
+
+      form {
+        display: flex;
+        /* align-items: center; */
+      }
+
+      .left {
+        margin-right: 5px;
+      }
+
+      .left .img {
+        border-radius: 5px;
+      }
+
+      .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .right .down {
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <!-- <div><a href="/">Home</a></div> -->
+      <center><h1>{{ title }}</h1></center>
+      <hr />
+      {% with messages = get_flashed_messages() %} {% if messages %}
+      <ul>
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %} {% endwith %} {% block content %}{% endblock %}
+    </div>
+  </body>
+</html>

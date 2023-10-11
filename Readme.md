@@ -707,7 +707,12 @@ def submit_textarea():
 Clone the project repository.
 
 ```
+## Gitee 
 git clone https://gitee.com/2010jing/Python-Blockchain-Tutorial.git
+
+## Github
+git clone https://github.com/2010jing/Python-Blockchain-Tutorial.git
+
 ```
 
 Install the necessary Python project dependencies 

@@ -1,4 +1,4 @@
-# Develop a blockchian application from scratch in Python
+# A Simple Blockchian Application Tutorial in Python
 
 > 2023/10/11
 
